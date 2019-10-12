@@ -1,8 +1,8 @@
 <template lang="pug">
-	#hero
+	#hero-section
 		.container-fluid
 			.row
-				#profile
+				.profile
 					.me
 					.details 
 						h1 Hello! I'm Roland
@@ -32,7 +32,10 @@
 </script>
 
 <style lang="scss" scoped>
-	#hero {
+	#hero-section {
+		height: 550px;
+		width: 100%;
+		padding: 60px 0;
 		background: linear-gradient(
 				-45deg,
 				rgba(134, 62, 210, 0.88),
@@ -40,12 +43,9 @@
 			),
 			url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
 		background-size: cover;
-		height: 550px;
-		width: 100%;
-		padding: 60px 0;
 	}
 
-	#profile {
+	.profile {
 		width: 450px;
 		height: 700px;
 		margin: 100px auto;
@@ -119,6 +119,7 @@
 					color: rgba(134, 62, 210, 0.9);
 					font-size: 25px;
 					margin-right: 10px;
+					font-weight: 600;
 				}
 			}
 

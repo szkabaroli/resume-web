@@ -42,21 +42,14 @@
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
-			&:after {
+			&::before {
 				content: '';
 				position: absolute;
-
 				background: linear-gradient(to right, #0cebeb, #20e3b2);
-
-				//background-image: linear-gradient( 104.9deg,  rgba(255,95,162,1) 2.3%, rgba(254,201,154,1) 92.7% );
 				border-radius: 5px;
 				height: 5px;
 				width: 60px;
-
 				font-weight: 700;
-
-				z-index: -1;
-
 				top: -20px;
 				left: 50px;
 			}
@@ -65,7 +58,7 @@
 		p {
 			width: 600px;
 			margin: 0 auto;
-			padding: 40px 0;
+			padding: 40px 0 200px 0;
 			color: #667;
 		}
 	}
