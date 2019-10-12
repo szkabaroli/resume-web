@@ -1,7 +1,9 @@
 import React from 'react'
 import NavigationBar from './components/NavigationBar'
 import HeroSection from './components/HeroSection'
-import './App.scss'
+import styles from './App.scss'
+
+console.log(styles)
 
 const App = () => {
 	return (

@@ -18,7 +18,13 @@
 </script>
 
 <style lang="scss" scoped>
-	p {
-		color: green;
+	
+</style>
+
+// Global scss
+<style lang="scss">
+	html, body {
+		padding: 0;
+		margin: 0;
 	}
 </style>
