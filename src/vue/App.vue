@@ -2,17 +2,20 @@
 	div
 		navigation-bar
 		hero-section
+		about-section
 </template>
 
 <script>
 	import Vue from 'vue'
 	import NavigationBar from './components/NavigationBar.vue'
 	import HeroSection from './components/HeroSection.vue'
+	import AboutSection from './components/AboutSection.vue'
 
 	export default {
 		components: {
 			NavigationBar,
-			HeroSection
+			HeroSection,
+			AboutSection
 		}
 	}
 </script>
