@@ -8,7 +8,7 @@ This is my online *CV* or *Résumé* :briefcase: :rocket:, implemented in [Vue.j
 
 ```bash
 # Clone project
-git clone https://github.com/PanJiaChen/vue-element-admin.git
+git clone https://github.com/szkabaroli/resume-web
 
 # Install dependencies
 npm install
