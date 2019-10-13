@@ -1,10 +1,9 @@
 <template lang="pug">
 	#skills-section
 		.container
-			.row
-				.skills
-					h1 Skills!
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.row.skills
+				h1 Skills
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			.row
 				h2 Languages 
 			.row
@@ -138,9 +137,7 @@
 	#skills-section {
 		height: auto;
 		width: 100%;
-		padding: 90px 0 0 0;
-
-		height: 14000px;
+		padding: 90px 0 120px 0;
 	}
 
 	.skill-card {
@@ -160,18 +157,25 @@
 			font-weight: 500;
 			margin: 10px 0 0 0;
 		}
+
+		
 	}
 
 	.aspect-wrapper {
 		width: 100%;
 		height: 0;
 		overflow: hidden;
-		padding-top: 55%;
+		padding-top: 40%;
 		background: white;
 		position: relative;
 		margin: 15px 0px;
 		box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
+
+		transition: all .2s ease;
+		&:hover {
+			transform:scale(1.05);
+		}
 
 		div {
 			position: absolute;
@@ -214,14 +218,15 @@
 
 	.skills {
 		width: 100%;
-		padding: 120px 0 10px 0;
+		padding: 0px 0 10px 0;
 		text-align: center;
-
-		p {
 			width: 600px;
 			margin: 0 auto;
+
+		p {
 			padding: 40px 0 70px 0;
 			color: #667;
+			
 		}
 	}
 </style>

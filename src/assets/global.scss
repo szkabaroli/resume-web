@@ -7,7 +7,19 @@
 html {
 	box-sizing: border-box;
 	-ms-overflow-style: scrollbar;
+	
+}
+
+html, button {
 	font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited, &:active {
+		color: inherit;
+	}
 }
 
 html,
