@@ -1,6 +1,6 @@
 ## Description
 
-This is my online *CV* or *Résumé* :briefcase: :rocket:, implemented in [Vue.js](https://github.com/vuejs/vue) and [React.js](https://github.com/facebook/react)
+This is my online *CV* or *Résumé* :briefcase: :rocket:, implemented in [Vue.js](https://github.com/vuejs/vue) and [React.js](https://github.com/facebook/react). Hosted on firebase :fire:
 
 ### Development
 
