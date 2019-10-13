@@ -101,3 +101,7 @@ typings/
 
 # Parcel build files
 dist/
+
+# Firebase
+.firebaserc
+.firebase

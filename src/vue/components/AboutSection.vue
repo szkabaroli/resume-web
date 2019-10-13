@@ -99,6 +99,11 @@
 			box-shadow: 0 8px 16px rgba(250, 149, 71, 0.1);
 		}
 
+		&:focus {
+			transform: translateY(-3px);
+			opacity: 0.8;
+		}
+
 		display: flex;
 
 		i {
@@ -142,7 +147,7 @@
 			background-image: linear-gradient( 240deg,  rgb(0, 180, 240) 3.6%, rgb(0, 144, 194) 86.9% );
 			box-shadow: 0 8px 16px rgba(0, 144, 194, 0.25);
 			color: #fff;
-			
+
 			&:hover {
 				background-image: linear-gradient( 240deg,  rgb(0, 180, 240) 3.6%, rgb(0, 144, 194) 86.9% );
 				box-shadow: 0 8px 16px rgba(0, 144, 194, 0.4);

@@ -1,0 +1,31 @@
+{
+  "hosting": [
+    {
+      "target": "vue-app",
+      "public": "dist/vue",
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "/vue",
+          "type": 301
+        }
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "react-app",
+      "public": "dist/react",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
