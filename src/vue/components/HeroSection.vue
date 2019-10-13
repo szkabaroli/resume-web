@@ -3,11 +3,11 @@
 		.container-fluid
 			.row
 				.profile
-					.me
+					.me(:style="{ backgroundImage: `url('${meImage}')` }")
 					.details 
 						h1 Hello! I'm Roland
 						h3 Front-end & Backend Developer
-						div.hr
+						.hr-line
 						ul
 							li
 								i(class="lni-phone-handset") 
@@ -27,7 +27,12 @@
 	import Vue from 'vue'
 
 	export default {
-		name: 'navigation-bar',
+		data() {
+			return {
+				// this needed becouse background-image: url('/images/me.png') in css not going to work
+				meImage: '/images/me.png'
+			}
+		}
 	}
 </script>
 
@@ -65,7 +70,7 @@
 			width: 400px;
 			height: 450px;
 			border-radius: 9px 0 0 9px;
-			background: url('../../../assets/images/I.png');
+			
 			background-size: 550px;
 			background-position-x: -110px;
 			background-position-y: 0px;
@@ -96,7 +101,7 @@
 				font-weight: 500;
 			}
 
-			.hr {
+			.hr-line {
 				height: 1px;
 				width: 100%;
 				background: #eee;

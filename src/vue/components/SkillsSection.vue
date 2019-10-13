@@ -6,12 +6,29 @@
 					h1 Skills!
 					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			.row
-				.col-12.col-sm-6.col-lg-4(v-for="skill in skills")
+				h2 Languages 
+			.row
+				.col-12.col-sm-6.col-lg-4(v-for="item in languages")
 					.aspect-wrapper
 						.skill-card
-							img(:src="skill.image") 
-							
-							p {{skill.name}}
+							img(:src="item.image") 
+							p {{item.name}}
+			.row
+				h2 Frameworks & Libraries
+			.row
+				.col-12.col-sm-6.col-lg-4(v-for="item in frameworks")
+					.aspect-wrapper
+						.skill-card
+							img(:src="item.image") 
+							p {{item.name}}
+			.row
+				h2 Technologies
+			.row
+				.col-12.col-sm-6.col-lg-4(v-for="item in technologies")
+					.aspect-wrapper
+						.skill-card
+							img(:src="item.image") 
+							p {{item.name}}
 </template>
 
 <script>
@@ -20,41 +37,96 @@
 	export default {
 		data() {
 			return {
-				skills: [
+				languages: [
+					{
+						name: 'ES6',
+						image: '/images/es6.png',
+						desc: 'Veteran Level',
+					},
+					{
+						name: 'TypeScript',
+						image: '/images/typescript.png',
+						desc: 'Amateur Level',
+					},
+
+					{
+						name: 'SCSS',
+						image: '/images/scss.png',
+						desc: 'Skilled Level',
+					},
+					{
+						name: 'C++',
+						image: '/images/cpp.png',
+						desc: 'Expert Level',
+					},
+					{
+						name: 'Pug',
+						image: '/images/pug.png',
+						desc: 'Skilled Level',
+					},
+				],
+				frameworks: [
 					{
 						name: 'Vue.js',
-						image: require('../../../assets/images/vue.png'),
-						knowledge: 1,
+						image: '/images/vue.png',
+						desc: 'Veteran Level',
 					},
 					{
 						name: 'React.js',
-						image: 'vue.png',
-						knowledge: 1,
+						image: '/images/react.png',
+						desc: 'Experienced Level',
+					},
+					{
+						name: 'Express',
+						image: '/images/express.png',
+						desc: 'Expert Level',
+					},
+					{
+						name: 'JQuery',
+						image: '/images/jquery.png',
+						desc: 'Skilled Level',
+					},
+					{
+						name: 'Passport',
+						image: '/images/passport.png',
+						desc: 'Amateur Level',
+					},
+				],
+				technologies: [
+					{
+						name: 'MongoDB',
+						image: '/images/mongodb.png',
+						desc: 'Skilled Level',
+					},
+					{
+						name: 'Webpack',
+						image: '/images/webpack.png',
+						desc: 'Experienced Level',
 					},
 					{
 						name: 'Node.js',
-						image: 'vue.png',
-						knowledge: 1,
+						image: '/images/nodejs.png',
+						desc: 'Experienced Level',
 					},
 					{
-						name: '',
-						image: 'vue.png',
-						knowledge: 1,
+						name: 'Electron',
+						image: '/images/electron.png',
+						desc: 'Amateur Level',
 					},
 					{
-						name: '',
-						image: 'vue.png',
-						knowledge: 1,
+						name: 'AWS',
+						image: '/images/aws.png',
+						desc: 'Skilled Level',
 					},
 					{
-						name: '',
-						image: 'vue.png',
-						knowledge: 1,
+						name: 'Google Cloud',
+						image: '/images/googlec.png',
+						desc: 'Amateur Level',
 					},
 					{
-						name: '',
-						image: 'vue.png',
-						knowledge: 1,
+						name: 'Git',
+						image: '/images/git.png',
+						desc: 'Amateur Level',
 					},
 				],
 			}
@@ -73,10 +145,20 @@
 
 	.skill-card {
 		text-align: center;
-
 		img {
-			height: 70px ;
-			margin: 20px;
+			height: 40%;
+			margin: 6%;
+		}
+
+		p {
+			font-weight: 600;
+		}
+
+		padding: 10px;
+
+		.desc {
+			font-weight: 500;
+			margin: 10px 0 0 0;
 		}
 	}
 
@@ -84,7 +166,7 @@
 		width: 100%;
 		height: 0;
 		overflow: hidden;
-		padding-top: 45%;
+		padding-top: 55%;
 		background: white;
 		position: relative;
 		margin: 15px 0px;
@@ -100,34 +182,40 @@
 		}
 	}
 
+	h1,
+	h2 {
+		width: 240px;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+
+		color: rgb(134, 62, 210);
+		background: linear-gradient(15deg, rgb(134, 62, 210) 20%, rgb(69, 46, 198) 80%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	h2 {
+		padding: 60px 0 20px 0;
+	}
+
+	h1::before {
+		content: '';
+		position: absolute;
+		background: linear-gradient(to right, #0cebeb, #20e3b2);
+		border-radius: 5px;
+		height: 5px;
+		width: 60px;
+		font-weight: 700;
+		top: -20px;
+		left: 90px;
+	}
+
 	.skills {
 		width: 100%;
 		padding: 120px 0 10px 0;
 		text-align: center;
-
-		h1 {
-			width: 240px;
-			margin: 0 auto;
-			position: relative;
-
-			color: rgb(134, 62, 210);
-			background: linear-gradient(15deg, rgb(134, 62, 210) 20%, rgb(69, 46, 198) 80%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-
-			&::before {
-				content: '';
-				position: absolute;
-				background: linear-gradient(to right, #0cebeb, #20e3b2);
-				border-radius: 5px;
-				height: 5px;
-				width: 60px;
-				font-weight: 700;
-				top: -20px;
-				left: 90px;
-			}
-		}
 
 		p {
 			width: 600px;

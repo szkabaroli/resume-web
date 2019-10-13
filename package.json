@@ -24,9 +24,16 @@
 	},
 	"devDependencies": {
 		"@vue/component-compiler-utils": "^3.0.0",
+		"parcel-plugin-static-files-copy": "^2.2.1",
 		"postcss-modules": "^1.4.1",
 		"pug": "^2.0.4",
 		"sass": "^1.23.0",
 		"vue-template-compiler": "^2.6.10"
+	},
+	"staticFiles": {
+		"staticPath": [
+			"public"
+		],
+		"watcherGlob": "**"
 	}
 }
