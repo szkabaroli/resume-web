@@ -24,7 +24,7 @@
 			return {
 				schools: [
 					{ name: 'Szegedi SzC Gábor Dénes Szakgimnáziuma és Szakközépiskolája', from: '2014', to: '2019', region: 'Information Technology' },
-					{ name: 'Szegedi Tudományegyetem - Természettudományi és Informatikai Kar', from: '2019', to: '*2022*', region: 'Computer Science Engineering' },
+					{ name: 'Szegedi Tudományegyetem - Természettudományi és Informatikai Kar', from: '2019', to: 'Present', region: 'Computer Science Engineering' },
 				],
 			}
 		},
@@ -35,15 +35,15 @@
 	#education-section {
 		height: auto;
 		width: 100%;
-		padding: 110px 0 80px 0;
-		background: linear-gradient(-45deg, rgba(134, 62, 210, 0.93), rgba(69, 46, 198, 0.93)), url('https://images.unsplash.com/photo-1521055654799-26999bb3a60c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2614&q=80');
+		padding: 10px 0 80px 0;
+		background: linear-gradient(-45deg, rgba(134, 62, 210, 0.9), rgba(69, 46, 198, 0.9)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1441&q=80');
 		background-size: cover;
 		background-position: center;
 	}
 
 	.education {
 		width: 100%;
-		padding: 0px 0 10px 0;
+		padding: 140px 0 10px 0;
 		text-align: center;
 		width: 600px;
 		margin: 0 auto;
@@ -99,7 +99,7 @@
 			}
 
 			h4 {
-				color: #99b;
+				color: #668;
 				font-weight: 500;
 				margin: 0 15px;
 				font-size: 16px;

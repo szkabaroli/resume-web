@@ -7,7 +7,7 @@
 			.row
 				h2.s-headline Languages 
 			.row
-				.col-12.col-sm-6.col-lg-4(v-for="item in languages")
+				.col-12.col-sm-6.col-lg-4(v-for="item in skills.languages")
 					.aspect-wrapper
 						.skill-card
 							img(:src="item.image") 
@@ -15,7 +15,7 @@
 			.row
 				h2.s-headline Frameworks & Libraries
 			.row
-				.col-12.col-sm-6.col-lg-4(v-for="item in frameworks")
+				.col-12.col-sm-6.col-lg-4(v-for="item in skills.frameworks")
 					.aspect-wrapper
 						.skill-card
 							img(:src="item.image") 
@@ -23,7 +23,7 @@
 			.row
 				h2.s-headline Technologies
 			.row
-				.col-12.col-sm-6.col-lg-4(v-for="item in technologies")
+				.col-12.col-sm-6.col-lg-4(v-for="item in skills.technologies")
 					.aspect-wrapper
 						.skill-card
 							img(:src="item.image") 
@@ -34,98 +34,64 @@
 	import Vue from 'vue'
 
 	export default {
+		props: {
+			title: String,
+			text: String,
+			skills: Object
+		},
 		data() {
 			return {
 				languages: [
 					{
 						name: 'ES6',
 						image: '/images/es6.png',
-						desc: 'Veteran Level',
 					},
 					{
 						name: 'TypeScript',
 						image: '/images/typescript.png',
-						desc: 'Amateur Level',
 					},
 
 					{
 						name: 'SCSS',
 						image: '/images/scss.png',
-						desc: 'Skilled Level',
 					},
 					{
 						name: 'C++',
 						image: '/images/cpp.png',
-						desc: 'Expert Level',
 					},
 					{
 						name: 'Pug',
 						image: '/images/pug.png',
-						desc: 'Skilled Level',
-					},
-				],
-				frameworks: [
-					{
-						name: 'Vue.js',
-						image: '/images/vue.png',
-						desc: 'Veteran Level',
-					},
-					{
-						name: 'React.js',
-						image: '/images/react.png',
-						desc: 'Experienced Level',
-					},
-					{
-						name: 'Express',
-						image: '/images/express.png',
-						desc: 'Expert Level',
-					},
-					{
-						name: 'JQuery',
-						image: '/images/jquery.png',
-						desc: 'Skilled Level',
-					},
-					{
-						name: 'Passport',
-						image: '/images/passport.png',
-						desc: 'Amateur Level',
 					},
 				],
 				technologies: [
 					{
 						name: 'MongoDB',
 						image: '/images/mongodb.png',
-						desc: 'Skilled Level',
 					},
 					{
 						name: 'Webpack',
 						image: '/images/webpack.png',
-						desc: 'Experienced Level',
 					},
 					{
 						name: 'Node.js',
 						image: '/images/nodejs.png',
-						desc: 'Experienced Level',
 					},
 					{
 						name: 'Electron',
 						image: '/images/electron.png',
-						desc: 'Amateur Level',
 					},
 					{
 						name: 'AWS',
 						image: '/images/aws.png',
-						desc: 'Skilled Level',
 					},
 					{
 						name: 'Google Cloud',
 						image: '/images/googlec.png',
-						desc: 'Amateur Level',
 					},
 					{
 						name: 'Git',
 						image: '/images/git.png',
-						desc: 'Amateur Level',
 					},
 				],
 			}
@@ -137,7 +103,7 @@
 	#skills-section {
 		height: auto;
 		width: 100%;
-		padding: 90px 0 120px 0;
+		padding: 10px 0 120px 0;
 	}
 
 	.skill-card {
@@ -192,7 +158,7 @@
 
 	.skills {
 		width: 100%;
-		padding: 0px 0 10px 0;
+		padding: 140px 0 10px 0;
 		text-align: center;
 			width: 600px;
 			margin: 0 auto;

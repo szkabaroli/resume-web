@@ -24,7 +24,7 @@
 <style lang="scss" scoped>
 	#contact-section {
 		width: 100%;
-		padding: 110px 0 80px 0;
+		padding: 140px 0 80px 0;
 	}
 	
 

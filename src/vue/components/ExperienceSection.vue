@@ -1,5 +1,5 @@
 <template lang="pug">
-	#experience-section
+	section#experience-section
 		.container
 			.row
 				.experience
@@ -10,62 +10,18 @@
 							div.side
 								span.date {{item.date}}
 								span.line
-							p.title {{item.title}}
+							p.title {{item.event}}
 </template>
 
 <script>
 	import Vue from 'vue'
 
 	export default {
-		data() {
-			return {
-				timeline: [
-					{
-						date: '2010-2013',
-						title: 'First Lego Leuge and Lego Sumo Robot Programing and Unity',
-					},
-					{
-						date: '2014',
-						title: 'Finished my web design course (Basic html and css)',
-					},
-					{
-						date: '2014 September',
-						title: 'Started learning C# language',
-					},
-					{
-						date: '2014-2015',
-						title: 'Started learning Javascript language',
-					},
-					{
-						date: '2015-2016',
-						title: 'Playing with Node.js and Express',
-					},
-					{
-						date: '2016-2017',
-						title: 'EPAM Sytste Smart City project',
-					},
-					{
-						date: '2017',
-						title: 'Started learning C++ and OpenGL',
-					},
-					{
-						date: '2017 June-July',
-						title: 'EPAM System 1 Month Summer Internship',
-					},
-					{
-						date: '2017 May-June',
-						title: 'Started experienting with Vue.js and React.js',
-					},
-					{
-						date: '2018',
-						title: 'Started working on bigger more complex websites ideas written in Vue and Express.js',
-					},
-					{
-						date: '2019 October',
-						title: 'EPAM IT Night Challange',
-					},
-				],
-			}
+		name: 'experience-section',
+		props: {
+			title: String,
+			text: String,
+			timeline: Object
 		},
 	}
 </script>
