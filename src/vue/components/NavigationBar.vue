@@ -65,6 +65,7 @@
 		color: #fff;
 		padding: 10px 0;
 
+
 		&.invert {
 			background: #fff;
 			box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
@@ -93,6 +94,7 @@
 
 		.row {
 			justify-content: space-between;
+		align-items: baseline;
 
 			.brand {
 				font-weight: 700;

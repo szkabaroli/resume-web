@@ -5,8 +5,8 @@
 				.profile
 					.me(:style="{ backgroundImage: `url('${meImage}')` }")
 					.details 
-						h1 Hello! I'm Roland
-						h3 Front-end & Backend Developer
+						h1.headline Hello! I'm Roland
+						h3 Student & Web Developer
 						.hr-line
 						ul
 							li
@@ -30,9 +30,9 @@
 		data() {
 			return {
 				// this needed becouse background-image: url('/images/me.png') in css not going to work
-				meImage: '/images/me.png'
+				meImage: '/images/me.png',
 			}
-		}
+		},
 	}
 </script>
 
@@ -41,12 +41,7 @@
 		height: 550px;
 		width: 100%;
 		padding: 60px 0;
-		background: linear-gradient(
-				-45deg,
-				rgba(134, 62, 210, 0.88),
-				rgba(69, 46, 198, 0.88)
-			),
-			url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+		background: linear-gradient(-45deg, rgba(134, 62, 210, 0.88), rgba(69, 46, 198, 0.88)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
 		background-size: cover;
 	}
 
@@ -70,7 +65,7 @@
 			width: 400px;
 			height: 450px;
 			border-radius: 9px 0 0 9px;
-			
+
 			background-size: 550px;
 			background-position-x: -110px;
 			background-position-y: 0px;
@@ -84,21 +79,25 @@
 
 			h1 {
 				color: rgb(134, 62, 210);
-				background: linear-gradient(
-					15deg,
-					rgb(134, 62, 210) 20%,
-					rgb(69, 46, 198) 80%
-				);
+				background: linear-gradient(15deg, rgb(134, 62, 210) 20%, rgb(69, 46, 198) 80%);
 				background-clip: text;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				font-weight: 700;
+
+				/* fix for IE*/
+				@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+					background: transparent;
+				}
+
+				margin: 15px 0 15px 0;
 			}
 
 			h3 {
 				font-size: 15px;
-				color: #aaa;
+				color: #aab;
 				font-weight: 500;
+				padding: 10px 0;
 			}
 
 			.hr-line {

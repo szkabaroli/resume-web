@@ -2,10 +2,10 @@
 	#skills-section
 		.container
 			.row.skills
-				h1 Skills
-				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				h1.headline.line Skills
+				p Since my first programing expereience in 2010 I self learnt a lot of thing that I m interseted in. Here are the languages, technologies that i am  used or contact with during my programing carrear. I only listed skills here, that I think im good at it. To see what level im in with each skill, here is a link to my Github.
 			.row
-				h2 Languages 
+				h2.s-headline Languages 
 			.row
 				.col-12.col-sm-6.col-lg-4(v-for="item in languages")
 					.aspect-wrapper
@@ -13,7 +13,7 @@
 							img(:src="item.image") 
 							p {{item.name}}
 			.row
-				h2 Frameworks & Libraries
+				h2.s-headline Frameworks & Libraries
 			.row
 				.col-12.col-sm-6.col-lg-4(v-for="item in frameworks")
 					.aspect-wrapper
@@ -21,7 +21,7 @@
 							img(:src="item.image") 
 							p {{item.name}}
 			.row
-				h2 Technologies
+				h2.s-headline Technologies
 			.row
 				.col-12.col-sm-6.col-lg-4(v-for="item in technologies")
 					.aspect-wrapper
@@ -186,34 +186,8 @@
 		}
 	}
 
-	h1,
-	h2 {
-		width: 240px;
-		margin: 0 auto;
-		position: relative;
-		text-align: center;
-
-		color: rgb(134, 62, 210);
-		background: linear-gradient(15deg, rgb(134, 62, 210) 20%, rgb(69, 46, 198) 80%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-
 	h2 {
 		padding: 60px 0 20px 0;
-	}
-
-	h1::before {
-		content: '';
-		position: absolute;
-		background: linear-gradient(to right, #0cebeb, #20e3b2);
-		border-radius: 5px;
-		height: 5px;
-		width: 60px;
-		font-weight: 700;
-		top: -20px;
-		left: 90px;
 	}
 
 	.skills {

@@ -2,8 +2,9 @@
 	#education-section
 		.container
 			.row.education
-				h1 Education
-				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				h1.headline.line.white Education
+				p While completing my IT studies I got to know different technologies.
+					| This position has given me key employability skills while also allowing me to experience working in a professional and fast-paced work environment.
 			.row
 				.col-12(v-for="school in schools")
 					.card
@@ -35,38 +36,9 @@
 		height: auto;
 		width: 100%;
 		padding: 110px 0 80px 0;
-
 		background: linear-gradient(-45deg, rgba(134, 62, 210, 0.93), rgba(69, 46, 198, 0.93)), url('https://images.unsplash.com/photo-1521055654799-26999bb3a60c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2614&q=80');
 		background-size: cover;
 		background-position: center;
-
-		//background: #f1f2f6;
-	}
-
-	h1,
-	h2 {
-		width: 240px;
-		margin: 0 auto;
-		position: relative;
-		text-align: center;
-
-		color: #FFF;
-	}
-
-	h2 {
-		padding: 60px 0 20px 0;
-	}
-
-	h1::before {
-		content: '';
-		position: absolute;
-		background: #fff;
-		border-radius: 5px;
-		height: 5px;
-		width: 60px;
-		font-weight: 700;
-		top: -20px;
-		left: 90px;
 	}
 
 	.education {

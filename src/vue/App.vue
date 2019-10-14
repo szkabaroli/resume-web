@@ -21,6 +21,18 @@
 	import ContactSection from './components/ContactSection.vue'
 	import Footer from './components/Footer.vue'
 
+	function getScrollTop() {
+		if (typeof pageYOffset != 'undefined') {
+			//most browsers except IE before #9
+			return pageYOffset
+		} else {
+			const body = document.body
+			let document = document.documentElement
+			document = document.clientHeight ? document : body
+			return document.scrollTop
+		}
+	}
+
 	export default {
 		components: {
 			NavigationBar,
@@ -30,17 +42,17 @@
 			SkillsSection,
 			EducationSection,
 			ContactSection,
-			'v-footer': Footer
+			'v-footer': Footer,
 		},
 		data() {
 			return {
-				top: true
+				top: true,
 			}
 		},
 		methods: {
 			onScroll(e) {
-				this.top = (e.target.scrollingElement.scrollTop == 0)
-			}
-		}
+				this.top = getScrollTop() == 0
+			},
+		},
 	}
 </script>

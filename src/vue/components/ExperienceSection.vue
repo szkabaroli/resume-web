@@ -3,7 +3,7 @@
 		.container
 			.row
 				.experience
-					h1 My Experience
+					h1.headline.line.white My Experience
 					p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					.container
 						.time-section(v-for="item in timeline")
@@ -83,27 +83,6 @@
 	.experience {
 		width: 100%;
 		padding: 140px 0 0px 0;
-
-		h1 {
-			width: 240px;
-			text-align: center;
-			margin: 0 auto;
-			position: relative;
-
-			color: #fff;
-
-			&::before {
-				content: '';
-				position: absolute;
-				background: #fff;
-				border-radius: 5px;
-				height: 5px;
-				width: 60px;
-				font-weight: 700;
-				top: -20px;
-				left: 90px;
-			}
-		}
 
 		.description {
 			width: 600px;
