@@ -1,5 +1,5 @@
 <template lang="pug">
-	#education-section
+	section#education-section
 		.container
 			.row.education
 				h1.headline.line.white Education
@@ -30,80 +30,3 @@
 		},
 	}
 </script>
-
-<style lang="scss" scoped>
-	#education-section {
-		height: auto;
-		width: 100%;
-		padding: 10px 0 80px 0;
-		background: linear-gradient(-45deg, rgba(134, 62, 210, 0.9), rgba(69, 46, 198, 0.9)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1441&q=80');
-		background-size: cover;
-		background-position: center;
-	}
-
-	.education {
-		width: 100%;
-		padding: 140px 0 10px 0;
-		text-align: center;
-		width: 600px;
-		margin: 0 auto;
-
-		p {
-			padding: 40px 0 70px 0;
-			color: rgba(255, 255, 255, 0.7);
-		}
-	}
-
-	.card {
-		margin: 0px auto 80px auto;
-		max-width: 700px;
-		position: relative;
-		width: 100%;
-		border-radius: 10px;
-		background: #fff;
-
-		padding: 50px 40px 40px 40px;
-
-		transition: all 0.2s ease;
-		&:hover {
-			transform: scale(1.01);
-		}
-
-		.date {
-			position: absolute;
-			top: -30px;
-			left: 45px;
-
-			font-size: 15px;
-			padding: 15px 20px;
-			border-radius: 5px;
-
-			font-weight: 600;
-			color: #fff;
-
-			background: #20e3b2;
-			background: linear-gradient(60deg, #0cebeb, #20e3b2);
-
-			box-shadow: 5px 5px 10px rgba(32, 227, 178, 0.2);
-		}
-
-		div {
-			line-height: 27px;
-			display: flex;
-			margin: 10px 0;
-
-			i {
-				color: rgb(134, 62, 210);
-				font-weight: 1000;
-				font-size: 27px;
-			}
-
-			h4 {
-				color: #668;
-				font-weight: 500;
-				margin: 0 15px;
-				font-size: 16px;
-			}
-		}
-	}
-</style>

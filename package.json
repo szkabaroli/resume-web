@@ -18,23 +18,25 @@
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.11.2",
 		"babel-polyfill": "^6.26.0",
+		"smoothscroll-polyfill": "^0.4.4",
 		"components": "^0.1.0",
 		"firebase": "^7.2.0",
 		"react": "^16.10.2",
 		"react-dom": "^16.10.2",
-		"smoothscroll-polyfill": "^0.4.4",
-		"styled-components": "^4.4.0",
 		"vue": "^2.6.10"
 	},
 	"devDependencies": {
-		"vue-hot-reload-api": "^2.3.4",
-		"parcel-bundler": "^1.12.4",
-		"parcel-plugin-inlinesvg": "^0.1.1",
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
 		"@vue/component-compiler-utils": "^3.0.0",
+		"parcel-bundler": "^1.12.4",
+		"parcel-plugin-bundle-visualiser": "^1.2.0",
+		"parcel-plugin-inlinesvg": "^0.1.1",
 		"parcel-plugin-static-files-copy": "^2.2.1",
 		"postcss-modules": "^1.4.1",
 		"pug": "^2.0.4",
 		"sass": "^1.23.0",
+		"vue-hot-reload-api": "^2.3.4",
 		"vue-template-compiler": "^2.6.10"
 	},
 	"staticFiles": {

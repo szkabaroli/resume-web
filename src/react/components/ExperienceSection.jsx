@@ -6,21 +6,23 @@ const ExperienceSection = props => {
 	return (
 		<section id="experience-section">
 			<div className="container">
-				<div className="row experience">
-					<h1 className="headline line white"></h1>
-					<p className="text"></p>
-					<div className="timeline-container">
-						{timeline.map(item => {
-							return (
-								<div className="time-section">
-									<div className="side">
-										<span className="date">{item.date}</span>
-										<span className="line"></span>
+				<div className="row">
+					<div className="experience">
+						<h1 className="headline line white">{title}</h1>
+						<p className="text">{text}</p>
+						<div className="timeline-container">
+							{timeline.map((item, index) => {
+								return (
+									<div key={index} className="time-section">
+										<div className="side">
+											<span className="date">{item.date}</span>
+											<span className="line"></span>
+										</div>
+										<p className="event">{item.event}</p>
 									</div>
-									<p className="title">{item.event}</p>
-								</div>
-							)
-						})}
+								)
+							})}
+						</div>
 					</div>
 				</div>
 			</div>
@@ -29,15 +31,3 @@ const ExperienceSection = props => {
 }
 
 export default ExperienceSection
-
-/* .container
-			.row
-				.experience
-					h1.headline.line.white My Experience
-					p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					.container
-						.time-section(v-for="item in timeline")
-							div.side
-								span.date {{item.date}}
-								span.line
-							p.title {{item.event}} */
