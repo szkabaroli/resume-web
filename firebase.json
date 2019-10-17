@@ -3,13 +3,6 @@
     {
       "target": "vue-app",
       "public": "dist/vue",
-      "redirects": [
-        {
-          "source": "/",
-          "destination": "/vue",
-          "type": 301
-        }
-      ],
       "rewrites": [
         {
           "source": "**",

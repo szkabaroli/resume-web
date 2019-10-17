@@ -2,6 +2,9 @@
 
 This is my online *CV* or *Résumé* :briefcase: :rocket:, implemented in [Vue.js](https://github.com/vuejs/vue) and [React.js](https://github.com/facebook/react). Hosted on firebase :fire:
 
+##### Vue: https://resume-vue.web.app/
+##### React https://resume-react.web.app/
+
 ### Development
 
 *First things first clone the repo and install dependecies*
