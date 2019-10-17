@@ -2,9 +2,8 @@
 	section#education-section
 		.container
 			.row.education
-				h1.headline.line.white Education
-				p.text While completing my IT studies I got to know different technologies.
-					| This position has given me key employability skills while also allowing me to experience working in a professional and fast-paced work environment.
+				h1.headline.line.white {{ title }}
+				p.text {{ text }}
 			.row
 				.col-12(v-for="school in schools")
 					.card
@@ -21,6 +20,8 @@
 	import Vue from 'vue'
 	export default {
 		props: {
+			title: String,
+			text: String,
 			schools: Object
 		},
 	}
