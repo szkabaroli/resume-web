@@ -13,7 +13,7 @@ const EducationSection = props => {
 			<div className="container">
 				<div className="row education">
 					<h1 className="headline line white">{title}</h1>
-					<p>{text}</p>
+					<p className="text">{text}</p>
 				</div>
 				<div className="row">
 					{schools.map((item, index) => (

@@ -3,7 +3,7 @@
 		.container
 			.row.skills
 				h1.headline.line {{ title }}
-				p {{ text }}
+				p.text {{ text }}
 			.row
 				h2.s-headline Languages 
 			.row

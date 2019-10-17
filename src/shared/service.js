@@ -16,10 +16,13 @@ const db = firebase.firestore()
 const textsRef = db.collection("resume-texts")
 const timelineRef = db.collection("experience-timeline")
 const skillsRef = db.collection("skills").doc('3gkoQI1JLNFHkU9AlteY')
+const schoolsRef = db.collection("schools")
 
 const languagesRef = skillsRef.collection('languages')
 const frameworksRef = skillsRef.collection('frameworks')
 const technologiesRef = skillsRef.collection('technologies')
+
+
 
 export const getTexts = async () => {
 	const data = {}
@@ -71,6 +74,21 @@ export const getSkills = async () => {
 		const technologiesDocs = await technologiesRef.get()
 		technologiesDocs.forEach(doc => {
 			data.technologies[doc.id] = doc.data()
+		})
+	} catch (error) {
+		alert("Error getting documents:", error)
+	}
+
+	return data
+}
+
+export const getSchools = async () => {
+	const data = {}
+
+	try {
+		const docs = await schoolsRef.get()
+		docs.forEach(doc => {
+			data[doc.id] = doc.data()
 		})
 	} catch (error) {
 		alert("Error getting documents:", error)

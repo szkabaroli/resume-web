@@ -71,7 +71,7 @@ class App extends Component {
 		})
 	}
 
-	async componentDidMount() {
+	async componentWillMount() {
 		window.addEventListener('scroll', this.debounceScroll)
 
 		let data = await getTexts()
@@ -86,7 +86,7 @@ class App extends Component {
 		const { texts, top, timeline, skills, schools } = this.state
 
 		return (
-			<div onScroll={this.handleScroll}>
+			<div className="main" onScroll={this.handleScroll}>
 				<NavigationBar top={top} />
 				<HeroSection welcome={texts.hero.welcome} role={texts.hero.role} contacts={texts.hero.contacts} />
 				<AboutSection title={texts.about.title} text={texts.about.text} />

@@ -36,3 +36,13 @@ export const scrollTo = el => {
 		behavior: 'smooth', // smooth scroll
 	})
 }
+
+export const download = (path, name) => {
+	let element = document.createElement('a')
+	element.setAttribute('href', path)
+	element.setAttribute('download', name)
+	element.style.display = 'none'
+	document.body.appendChild(element)
+	element.click()
+	document.body.removeChild(element)
+}

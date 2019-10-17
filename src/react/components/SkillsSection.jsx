@@ -8,7 +8,7 @@ const SkillsSection = props => {
 			<div className="container">
 				<div className="row skills">
 					<h1 className="headline line">{title}</h1>
-					<p>{text}</p>
+					<p className="text">{text}</p>
 				</div>
 				<div className="row">
 					<h2 className="s-headline">Languages</h2>
