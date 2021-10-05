@@ -1,7 +1,12 @@
 import React, { FC } from "react"
 
 // TODO: implement this
-interface ISchool { }
+interface ISchool {
+  name: string
+  from: string
+  to: string
+  region: string
+}
 
 interface IProps {
   title: string
@@ -10,9 +15,9 @@ interface IProps {
 }
 
 const EducationSection: FC<IProps> = props => {
-  const { title, text } = props
+  const { title, text, schools } = props
 
-  const schools = [
+  /*const schools = [
     {
       name: "Szegedi SzC Gábor Dénes Szakgimnáziuma és Szakközépiskolája",
       from: "2014",
@@ -25,7 +30,7 @@ const EducationSection: FC<IProps> = props => {
       to: "Present",
       region: "Computer Science Engineering"
     }
-  ]
+  ]*/
 
   return (
     <section id="education-section">

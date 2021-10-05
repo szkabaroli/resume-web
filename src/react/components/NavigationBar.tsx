@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useState } from "react"
-import { scrollTo } from "../../shared/utils.js"
+import { scrollTo } from "../../shared/utils"
 
 interface IProps {
   atTop: boolean

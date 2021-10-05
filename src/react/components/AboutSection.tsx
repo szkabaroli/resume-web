@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { download } from "../../shared/utils.js"
+import { download } from "../../shared/utils"
 
 interface IProps {
   title: string

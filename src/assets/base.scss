@@ -1,0 +1,51 @@
+@import "./variables.scss";
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+html,
+button {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: inherit;
+  }
+}
+
+html,
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+a {
+  color: $color-primary;
+}
+
+.main {
+  overflow-x: hidden;
+  position: relative;
+}

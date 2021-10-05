@@ -59,28 +59,28 @@ const App = () => {
   }, [])
 
   const debouncedScroll = useCallback(
-    debounce(() => {}, 0),
+    debounce(() => {}, 15),
     [handleScroll]
   )
 
   useEffect(() => {
     window.addEventListener("scroll", debouncedScroll)
 
-    const loadApi = async () => {
+    const create = async () => {
       const [texts, timeline, skills, schools] = await Promise.all([
-        await getTexts() as any,
-        await getExperienceTimeline(),
-        await getSkills(),
-        await getSchools()
+        getTexts(),
+        getExperienceTimeline(),
+        getSkills(),
+        getSchools()
       ])
 
-      setTexts(texts)
+      setTexts(texts as any)
       setTimeline(timeline)
       setSkills(skills)
       setSchools(schools)
     }
 
-    loadApi()
+    create()
 
     return () => window.removeEventListener("scroll", debouncedScroll)
   }, [])
