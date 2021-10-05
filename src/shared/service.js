@@ -22,8 +22,6 @@ const languagesRef = skillsRef.collection('languages')
 const frameworksRef = skillsRef.collection('frameworks')
 const technologiesRef = skillsRef.collection('technologies')
 
-
-
 export const getTexts = async () => {
 	const data = {}
 	try {
@@ -76,7 +74,7 @@ export const getSkills = async () => {
 			data.technologies[doc.id] = doc.data()
 		})
 	} catch (error) {
-		alert("Error getting documents:", error)
+		console.error("Error getting documents:", error)
 	}
 
 	return data
@@ -91,7 +89,7 @@ export const getSchools = async () => {
 			data[doc.id] = doc.data()
 		})
 	} catch (error) {
-		alert("Error getting documents:", error)
+		console.error("Error getting documents:", error)
 	}
 
 	return data

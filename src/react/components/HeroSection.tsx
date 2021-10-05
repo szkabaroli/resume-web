@@ -16,7 +16,7 @@ const HeroSection = props => {
 							<ul>
 								<li>
 									<i className="lni-phone-handset"></i>
-									<p> Phone: {contacts.phone}</p>
+									<p> Phone: <a href={`tel:${contacts.phone}`}>{contacts.phone}</a></p>
 								</li>
 								<li>
 									<i className="lni-envelope"></i>

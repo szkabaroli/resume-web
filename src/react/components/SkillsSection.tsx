@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const SkillsSection = props => {
+interface ISkill {
+  name: string
+  image: string
+}
+
+interface IProps {
+  title: string
+  text: string
+  skills: {
+    languages: ISkill[],
+    frameworks: ISkill[],
+    technologies: ISkill[]
+  }
+}
+
+const SkillsSection: FC<IProps> = props => {
 	const { title, text, skills } = props
 
 	return (

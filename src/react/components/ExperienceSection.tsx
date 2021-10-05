@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const ExperienceSection = props => {
+interface IProps {
+  title: string
+  text: string
+  timeline: any[]
+}
+
+const ExperienceSection: FC<IProps> = props => {
 	const { title, text, timeline } = props
 
 	return (

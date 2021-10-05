@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Footer = props => {
+const Footer: FC = props => {
 	const currentYear = new Date().getFullYear()
 
 	return (
